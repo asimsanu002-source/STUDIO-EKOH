@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Georgia", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-primary: #C5A059;
+  --color-surface-container-low: #0c0c0c;
+  --color-on-secondary-container: #C5A059;
+  --color-on-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-tertiary: #a1a1a1;
+  --color-surface-variant: #161616;
+  --color-on-surface: #ffffff;
+  --color-surface-container-lowest: #020202;
+  --color-tertiary-container: #262626;
+  --color-tertiary-fixed-dim: #a1a1a1;
+  --color-surface: #0a0a0a;
+  --color-tertiary-fixed: #e5e5e5;
+  --color-laterite-red: #C5A059;
+  --color-error: #ff4545;
+  --color-on-background: #ffffff;
+  --color-surface-tint: #C5A059;
+  --color-error-container: #8c1d1d;
+  --color-on-tertiary: #111111;
+  --color-on-tertiary-fixed-variant: #a1a1a1;
+  --color-surface-bright: #1c1c1c;
+  --color-primary-fixed-dim: #b48d44;
+  --color-surface-container: #121212;
+  --color-inverse-surface: #f5f0e8;
+  --color-terracotta: #b48d44;
+  --color-on-tertiary-fixed: #ffffff;
+  --color-background: #050505;
+  --color-on-secondary-fixed: #ffffff;
+  --color-charcoal-text: #ffffff;
+  --color-on-tertiary-container: #ffffff;
+  --color-on-primary-fixed-variant: #ffffff;
+  --color-error-red: #ff4545;
+  --color-on-primary-fixed: #050505;
+  --color-warm-cream: #050505;
+  --color-secondary-container: #1a1a1a;
+  --color-on-surface-variant: #a1a1a1;
+  --color-teak-brown: #C5A059;
+  --color-surface-dim: #070707;
+  --color-primary-fixed: #e5d5b3;
+  --color-outline: rgba(255, 255, 255, 0.15);
+  --color-surface-container-highest: #1f1f1f;
+  --color-outline-variant: rgba(255, 255, 255, 0.08);
+  --color-inverse-primary: #C5A059;
+  --color-secondary-fixed-dim: #2a2a2a;
+  --color-on-secondary-fixed-variant: #ffffff;
+  --color-surface-container-high: #1a1a1a;
+  --color-secondary-fixed: #222222;
+  --color-on-secondary: #050505;
+  --color-on-primary: #050505;
+  --color-secondary: #a1a1a1;
+  --color-inverse-on-surface: #050505;
+  --color-urgency-amber: #C5A059;
+}
+
+.blueprint-grid {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Liquid Glass Effect */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.glass-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(120% 120% at 0% 0%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body {
+  background-color: #050505;
+  color: #ffffff;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Studio Ekoh",
+  "description": "Premium architectural pipeline and team management portal for Studio Ekoh, featuring real-time project metrics, interactive workspace analytics, and active site management controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
